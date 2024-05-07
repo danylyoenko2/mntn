@@ -1,0 +1,96 @@
+:root {
+  --colorBackground: #0b1d26;
+  --colorTextPrimary: #ffffff;
+  --colorTextAccent: #fbd784;
+  --colorGradientOne: #0b1d2600;
+  --colorGradientTwo: #0b1d26b8;
+  --fontFamily: "Chivo", sans-serif;
+  --secondFamily: "Chonburi", sans-serif;
+  --thirdFamily: "Cinzel", sans-serif;
+}
+
+/* ===================global================== */
+
+body {
+  font-family: var(--fontFamily);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--colorTextPrimary);
+  background-color: var(--colorBackground);
+}
+
+/* ===================header================== */
+
+.logo {
+  font-family: var(--secondFamily);
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.acction-link {
+  font-weight: 900;
+  font-size: 17px;
+}
+
+/* ====================main=================== */
+
+.hero-suptitle {
+  letter-spacing: 0.33em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-family: var(--thirdFamily);
+  font-weight: 400;
+  font-size: 88px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.step-text {
+  color: var(--colorTextAccent);
+  letter-spacing: 0.33em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.step-title {
+  font-size: 64px;
+  font-family: var(--thirdFamily);
+}
+
+.step-description {
+  font-weight: 900;
+  line-height: 1.78;
+}
+
+.step-link {
+  font-weight: 900;
+  color: var(--colorTextAccent);
+}
+/* ===================footer================== */
+
+.footer-info-text {
+  line-height: 1.78;
+  font-weight: 900;
+}
+
+.footer-info-copyright {
+  line-height: 1.78;
+  opacity: 0.5;
+}
+
+.blog-title,
+.mntn-title {
+  line-height: 1.33;
+  font-weight: 900;
+  font-size: 24px;
+  color: var(--colorTextAccent);
+}
+
+.blog-list-item,
+.mntn-list-item {
+  line-height: 1.78;
+}
