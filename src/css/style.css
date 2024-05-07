@@ -19,7 +19,33 @@ body {
   background-color: var(--colorBackground);
 }
 
+.container {
+  max-width: 1507px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 /* ===================header================== */
+
+.header {
+  padding-top: 65px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 93.22%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
 
 .logo {
   font-family: var(--secondFamily);
@@ -36,9 +62,19 @@ body {
 
 /* ====================main=================== */
 
+.hero {
+  padding-top: 200px;
+  padding-bottom: 745px;
+}
+
+.hero-container {
+  max-width: 980px;
+}
+
 .hero-suptitle {
   letter-spacing: 0.33em;
   text-transform: uppercase;
+  margin-bottom: 32px;
 }
 
 .hero-title {
@@ -46,7 +82,37 @@ body {
   font-weight: 400;
   font-size: 88px;
   line-height: 1.14;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+}
+
+.travel-step {
+  padding-bottom: 200px;
+}
+
+.travel-item {
+  margin-bottom: 200px;
+}
+
+.travel-item:last-child {
+  margin-bottom: 0px;
+}
+
+.travel-step {
+  display: flex;
+  align-items: center;
+  gap: 115px;
+}
+
+.travel-item:nth-child(even) .step-photo {
+  order: -1;
+}
+
+.step-body {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding-left: 150px;
 }
 
 .step-text {
@@ -72,9 +138,26 @@ body {
 }
 /* ===================footer================== */
 
+.footer {
+  padding-bottom: 120px;
+}
+
+.footer-container {
+  display: flex;
+  gap: 200px;
+}
+
+.footer-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
 .footer-info-text {
   line-height: 1.78;
   font-weight: 900;
+  flex-grow: 1;
 }
 
 .footer-info-copyright {
@@ -88,6 +171,14 @@ body {
   font-weight: 900;
   font-size: 24px;
   color: var(--colorTextAccent);
+  margin-bottom: 25px;
+}
+
+.blog-list,
+.mntn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .blog-list-item,
