@@ -23,6 +23,12 @@ body {
   background-size: contain;
 }
 
+@media (min-resolution: 2dppx) {
+  body {
+    background-image: url(../img/bg/bg@2x.webp);
+  }
+}
+
 .container {
   max-width: 1507px;
   margin: 0 auto;
